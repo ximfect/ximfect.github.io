@@ -6,8 +6,8 @@ ximfect is an effect-based image processing tool. Completely open-source, writte
 
 # Documentation
 
-1. [Effects](doc/effects/index.md)
-2. [Libs](doc/libs/index.md)
+1. [Effects](doc/effects.md)
+2. [Libs](doc/libs.md)
 
 # About...
 
