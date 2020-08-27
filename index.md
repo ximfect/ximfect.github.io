@@ -2,7 +2,7 @@
 
 # What is ximfect?
 
-ximfect is an effect-based image processing tool. Completely open-source, written in Go. You can view the official repository [here](https://github.com/qeamlgit/ximfect).
+ximfect is an effect-based image processing tool. Completely open-source, written in Go. You can view the official repository [here](https://github.com/ximfect/ximfect).
 
 # Documentation
 
