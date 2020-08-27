@@ -1,4 +1,5 @@
-# ximfect Lib Reference
+# Lib Reference
+[<< Back to index](../index.md)
 
 ## Lib Structure
 Like effects, all of the lib's files are stored in a folder whose name will be the lib's ID.
@@ -7,10 +8,10 @@ The lib will automatically load all `.js` files present in it's directory when `
 
 The only file a lib needs to work is an `effect.yml` file, with the following fields:
 
-* `name` -> the lib's DISPLAY name
+* `name`    -> the lib's DISPLAY name
 * `version` -> a semantic version of the lib 
-* `author` -> the name and email of the creator
-* `desc` -> a description of the effect
+* `author`  -> the name and email of the creator
+* `desc`    -> a description of the effect
 
 Example:
 ```yml

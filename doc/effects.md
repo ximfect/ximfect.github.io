@@ -1,4 +1,5 @@
-# ximfect Effect Reference
+# Effect Reference
+[<< Back to index](../index.md)
 
 ## Effect Structure
 All effects are stored in a folder, whose name will be the effect's ID.
@@ -18,8 +19,8 @@ The effect is applied by calling the `effect` function on each pixel of the inpu
 
 The file must define an `effect` function with 3 parameters:
 
-* `x`: `int` -> the x position of the current pixel
-* `y`: `int` -> the y position of the current pixel
+* `x`:     `int`       -> the x position of the current pixel
+* `y`:     `int`       -> the y position of the current pixel
 * `pixel`: `RGBAPixel` -> the RGBA values of the pixel
 
 The `effect` function must return a `RGBAPixel`-like object, containing 4 `int` properties: `r`, `g`, `b` and `a`.
