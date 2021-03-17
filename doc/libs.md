@@ -1,22 +1,17 @@
 # Lib Reference
+
 [<< Back to index](../index.md)
 
-## Lib Structure
-Like effects, all of the lib's files are stored in a folder whose name will be the lib's ID.
-The ID is used with the `Require` function to load libs.
-The lib will automatically load all `.js` files present in it's directory when `Require`d.
+## About libs
 
-The only file a lib needs to work is an `effect.yml` file, with the following fields:
+A ximfect Lib is a folder in the `APPDATA/ximfect/libs` directory (usually
+`C:\Users\<your username>\AppData\ximfect\libs` on Windows;
+`/home/<your username>/ximfect/libs`on Unix). The folder's name will be the lib
+ID you use in the CLI and in the `import` function (see
+[effect reference](effecs.md) if you're confused). Such a folder must one file:
+`effect.yml`, which is the lib's metadata, as well as any `.lua` files
+containing the lib's code.
 
-* `name`    -> the lib's DISPLAY name
-* `version` -> a semantic version of the lib 
-* `author`  -> the name and email of the creator
-* `desc`    -> a description of the effect
-
-Example:
-```yml
-name: Cool lib
-version 4.2.0
-author: Very cool guy <verycool@guy.com>
-desc: Contains some cool utilities
-```
+When a lib is `import`ed, all of it's `.lua` files are executed. All of the
+public API is available to these files, so youcould have a lib `import` another
+lib.
