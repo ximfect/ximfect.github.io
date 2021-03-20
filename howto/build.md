@@ -4,7 +4,8 @@
 
 ## Prerquisites
 
-* The Go Programming Langage (v 1.14+)
+* Go 1.16+ [*Download*](https://golang.org/dl)
+* Python 3.6+ [*Download*](https://python.org/downloads)
 
 ## Guide
 
@@ -12,33 +13,33 @@
 
     ```sh
     git clone https://github.com/ximfect/ximfect.git
-    cd ximfect/src
+    cd ximfect
     ```
 
 2. Install dependecies
 
     ```sh
+    cd src
     go get ./...
     ```
 
 3. Finally build ximfect
 
     ```sh
-    # On Unix:
-    go build -o ../ximfect
+    # this assumes you're in the `src` folder
+    cd ..\testing
+    
+    # Windows
+    py -3 build.py
 
-    # On Windows:
-    go build -o ..\ximfect.exe
+    # Linux
+    python3 build.py
     ```
 
-    Alternatively, you can use the more automated build script (Windows only):
+    This script will automatically output a binary in the 'testing' folder.
+    In case you can't run the resulting executable and you're on Linux, try
+    using `chmod` to allow the file to be executed:
 
     ```sh
-    cd ..\testing
-    build-test
+    chmod +x ./ximfect
     ```
-
-    This will automatically increment the build number and regenerate the
-    `src/tool/const.go` file to contain the new build information. It is
-    recommended that you only use this if you're making contributions to
-    ximfect.
